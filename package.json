@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "bin": "cli.js",
-  "license": "MIT",
+  "license": "Unlicense",
   "dependencies": {
     "degit": "^2.8.0",
     "execa": "^5.0.0",
@@ -16,5 +16,8 @@
   },
   "prettier": {
     "singleQuote": true
-  }
+  },
+  "description": "Create a React, Tailwind and Webpack 5 App",
+  "repository": "https://github.com/alonronin/create-rtw-app.git",
+  "author": "alonronin <alon@ronin.co.il>"
 }
