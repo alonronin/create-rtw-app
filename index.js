@@ -52,7 +52,7 @@ module.exports = async ({
       task: async (ctx, task) => {
         if (noInstall) return task.skip('Skipping yarn install.');
 
-        execa(`yarn`, { cwd: dir }).catch((err) => {
+        return await execa(`yarn`, { cwd: dir }).catch((err) => {
           task.skip('You need yarn to install dependencies.');
         });
       },
