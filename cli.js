@@ -11,12 +11,20 @@ const cli = meow(
   Options
     --force, -f         force override directory
     --no-install, -n    don't install dependencies
+    --help, -h          show help
+    --version, -v       show current version
           
   Examples
     $ yarn create rtw-app my-project
 `,
   {
     flags: {
+      help: {
+        alias: 'h',
+      },
+      version: {
+        alias: 'v',
+      },
       force: {
         type: 'boolean',
         alias: 'f',
