@@ -9,7 +9,7 @@ $ yarn create rtw-app <project-name>
 ```
 
 ## Options
-```shell
+```
 --force, -f         force override directory
 --no-install, -n    don't install dependencies
 --help, -h          show help
