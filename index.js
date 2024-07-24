@@ -29,11 +29,11 @@ module.exports = async ({
 
         delete pkg.repository;
         delete pkg.author;
-
+        delete pkg.license;
+        
         pkg.name = dir;
         pkg.version = '1.0.0';
-        pkg.license = '';
-
+        
         await fs.writeFile(
           `./${dir}/package.json`,
           JSON.stringify(pkg, null, 2),
